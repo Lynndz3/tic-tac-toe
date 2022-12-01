@@ -82,6 +82,9 @@ const gameboard = (() => {
 
             }
         }
+        if (gameboard.array.findIndex((element) => element === '') === -1) {
+            return "no one. Its a tie!"
+        }
     }
     return {
         array,
